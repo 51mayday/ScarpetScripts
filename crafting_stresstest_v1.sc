@@ -71,13 +71,13 @@ track(origin_pos, cycle) -> (
     // kill item entities since we have already stored them
     for(item_entities, modify(_, 'remove'););
 
-        if(length(item_entities) >=36 && global_counter:'status',
+        if(length(item_entities) >=27 && global_counter:'status',
             global_counter:'trials' += 1;
 
             item_names = map(item_entities, get(_ ~ 'item', 0));
 
-            sim_inventory = slice(item_names, 0, 36);
-            loop(36, delete(item_names,0););
+            sim_inventory = slice(item_names, 0, 27);
+            loop(27, delete(item_names,0););
 
             while(length(item_names) || length(sim_inventory), 27*9,
                 // count occurrences of cobblestone, spruce_planks, iron_ingots, and redstone in sim_inventory
