@@ -10,7 +10,7 @@ __config()  -> {
         'num' -> {
             'type' -> 'int',
             'min' -> 1,
-            'suggest' -> [512]
+            'suggest' -> [64, 576]
         }
     }
 };
