@@ -28,7 +28,7 @@ start(pos, num) -> (
 
 runner() -> (
     if(global_running,
-        loop(global_number, run(str('/loot spawn %d %d %d loot minecraft:gameplay/piglin_bartering', global_position)));
+        loop(global_number, run(str('/loot spawn %f %f %f loot minecraft:gameplay/piglin_bartering', global_position)));
         schedule(120, 'runner');
     );
 );
