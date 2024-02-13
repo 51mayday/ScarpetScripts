@@ -53,7 +53,7 @@ _runner() -> (
         global_cart_cache:global_last_tick = list;
 
         for(keys(global_cart_cache),
-            if(gt - _ > global_timeout, delete(global_cart_cache, _));
+            if(global_last_tick - _ > global_timeout, delete(global_cart_cache, _));
         );
 
         schedule(1, '_runner');
