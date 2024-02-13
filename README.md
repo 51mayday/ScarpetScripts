@@ -1,1 +1,1 @@
-Various scarpet scripts (requires carpet mod) for testing Minecraft contraptions. Particular focus on storage-tech related test scenarios. Use at your own risk and please let me know if you encounter any issues :)
+Various scarpet scripts (requires carpet mod) for testing Minecraft contraptions. Particular focus on storage-tech related test scenarios. Use at your own risk and please let me know if you encounter any issues.
