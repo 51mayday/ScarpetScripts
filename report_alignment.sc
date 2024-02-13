@@ -1,3 +1,4 @@
+// Report Alignment v1.2 by 51mayday
 // Reports motion an position of all item entities within distance of the player executing the command
 
 __config() -> {
