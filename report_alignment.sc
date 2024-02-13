@@ -2,7 +2,7 @@
 
 __config() -> {
     'commands' -> {
-        'start <origin_pos> <range>' -> 'get_info'
+        '<origin_pos> <range>' -> 'get_info'
     },
 	'arguments' -> {
 		'range' -> {
