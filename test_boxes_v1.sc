@@ -61,6 +61,7 @@ __config() -> {
         'stacks_per_type' -> {
             'type' -> 'int',
             'min' -> 1,
+            'suggest' -> [1, 27]
         },
         'filenames' -> {
             'type' -> 'text',
