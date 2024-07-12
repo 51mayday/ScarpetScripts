@@ -10,3 +10,6 @@ Previous versions of current scripts, preserved if I still have test setups that
 
 ### Dev
 Work-in-progress scripts, hosted so that others can test them and offer feedback. These scripts may not have been tested thoroughly. 
+
+### Advanced
+Versions of scripts with featuresets that are useful only in extremely specific scenarios. Your mileage may vary - scripts here were likely used once by Ners and then ignored. 
