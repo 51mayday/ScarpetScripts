@@ -89,17 +89,13 @@ encoderRunner(from_pos, to_pos, item_list_string) -> (
     item_lists = split(' ', item_list_string);
     item_list_contents = map(item_lists, _readItemList(_));
 
-    print(player(), item_list_contents);
-
     i = 0;
     affected_blocks = _scanStrip(from_pos, to_pos);
     for(item_list_contents,
         items = _;
-        x = if(items == item_list_contents:4, true;);
         while(length(items) > 0, 10, 
-            if(x, print(length(items)););
             block = affected_blocks:i;
-            if(block != 'chest', i += 1; print('f'); continue(););
+            if(block != 'chest', i += 1; print('Non-chest block!'); continue(););
             to_chest = slice(items, 0, if(length(items) < 54, length(items), 54););
 
             _encoderChest(block, to_chest);
