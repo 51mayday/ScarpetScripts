@@ -1,3 +1,5 @@
+// OUTDATED! CommandLeo has integrated this into his STX script for all MC versions! Big thanks to Leo!! See: https://github.com/CommandLeo/scarpet/wiki/StorageTechX
+
 // fills chests in an encoder according to itemlist files
 // sets chest ss to 2
 // if an itemtype is not valid it will fill that slot with a placeholder tropical_fish renamed to the intended item
