@@ -1,4 +1,4 @@
-// Status Checker v0 - by 51mayday
+// Status Checker v0.1 - by 51mayday
 // Checks if lamps at stored positions are on/off
 // If not loaded, defaults to 'off'
 // If loaded and lamp is on, returns 'machine x is on'
