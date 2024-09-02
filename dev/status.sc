@@ -27,7 +27,7 @@ __config() -> {
         'list' -> ['refresh', 'list'],
         'add <machine_name> <machine_dimension> <machine_pos>' -> 'add_machine',
         'remove <existing_machine_name>' -> 'remove_machine',
-        'query <existing_waypoint>' -> 'query_machine',
+        'query <existing_machine_name>' -> 'query_machine',
         'query' -> 'query_all',
         'test' -> _() -> print(player(), global_machines)
     },
@@ -43,7 +43,7 @@ __config() -> {
             'type' -> 'dimension',
             'suggest' -> ['overworld', 'the_nether', 'the_end']
         },
-        'existing_waypoint' -> {
+        'existing_machine_name' -> {
             'type' -> 'term',
             'suggester' -> _(args) -> (keys(global_machines);)
         }
