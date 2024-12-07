@@ -16,8 +16,7 @@ __config() -> {
             )),
         'itemtype_mode' -> _() -> print(player(), format(
                 'wi Returns the total amount of each item type within all inventories. Includes items nested in shulker boxes.'
-            )),
-        'debug' -> _() -> print(player(), global_checked);
+            ))
     },
 	'arguments' -> {
 		'mode' -> {
