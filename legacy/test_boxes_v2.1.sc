@@ -1,4 +1,5 @@
 // Test Boxes v2.1 by 51mayday
+// For versions below 1.20.5
 // Adapts code from CommandLeo's getallitems.sc
 // Thanks to Optic and Kartoffel for providing feedback
 // Fills chests with boxes of items. The amount of each item type (count) is specified as either the number of stacks or the number of items (unit). Can produce either single item type boxes with x items each (results) or mixed boxes with x of each item type over all boxes (test). 
