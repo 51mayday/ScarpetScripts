@@ -43,14 +43,14 @@ record(origin_pos) -> (
             slotIndex = _i;
             if(item_tags(_:0, 'c:shulker_boxes'), 
                 if(slotData:2 == null || !has(parse_nbt(slotData:2):'components':'minecraft:container'), 
-                    print(player(), 'Fail: empty box'); 
+                    print(player(), str('Fail: empty box at at %d %d %d', origin_pos)); 
                     global_counter:'fail':'empty' = global_counter:'fail':'empty' + 1;
                     , // else
                     clean_box = true;
                     for(parse_nbt(slotData:2):'components':'minecraft:container',
                         item_type = _:'item':'id';
                         if(box_type == '', box_type = item_type);
-                        if(box_type != item_type, clean_box = false; print(player(), 'Fail: mixed box'); global_counter:'fail':'mixed' = global_counter:'fail':'mixed' + 1; break(););
+                        if(box_type != item_type, clean_box = false; print(player(), str('Fail: mixed box at %d %d %d', origin_pos)); global_counter:'fail':'mixed' = global_counter:'fail':'mixed' + 1; break(););
                     );
                     if(clean_box, global_counter:'pass' += 1;);
                 );
@@ -58,7 +58,7 @@ record(origin_pos) -> (
                 put(tag, 'components.minecraft:lore', ['already_checked']);
                 inventory_set(origin_pos, slotIndex, slotData:1, slotData:0, tag);
             , // else
-                print(player(), 'Fail: non-box');
+                print(player(), str('Fail: non-box at %d %d %d', origin_pos));
                 tag = nbt(slotData:2);
                 put(tag, 'components.minecraft:lore', ['already_checked']);
                 inventory_set(origin_pos, slotIndex, slotData:1, slotData:0, tag);
