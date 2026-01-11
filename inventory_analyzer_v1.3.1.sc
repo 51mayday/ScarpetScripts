@@ -14,6 +14,9 @@
 // Fixed bug where double chests would have their contents counted twice
 // Added functionality to skip adjacent inventories (for double chests)
 
+// Future/WIP changes:
+// Add support for bundles
+
 __config() -> {
     'commands' -> {
         '<start_pos> <end_pos> <mode> <output_type> <filename>' -> 'init',
@@ -171,4 +174,5 @@ scarpet_json(list, filename) -> (
     print(player(), encode_json(list));
     write_file(filename, 'shared_json', encode_json(list));
     print(player(), format('wi Saved to: \\scripts\\shared\\' + filename + '.json'));
+
 );
